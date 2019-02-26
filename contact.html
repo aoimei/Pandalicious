@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>PandaContact!</title>
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+  <style media="screen">
+    @font-face {
+      font-family: phenomenabold; src: url('fonts/phenomenabold.otf');
+    }
+      @font-face {
+        font-family: leafy; src: url('fonts/leafy.otf');
+      }
+      @font-face {
+        font-family: robotoregular; src: url('fonts/robotoregular.ttf');
+      }
+    </style>
+</head>
+
+<body>
+  <div class="top-container" style=" background-image:url('images/contact1.jpg');">
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"> <img class="logoimg" border="0" alt="Pandalicious Home" src="images/logo.png">
+      </div>
+
+      <div class="nav">
+        <a href="learn.html"> Learn </a>
+        <a href="meet.html"> Meet </a>
+        <a href="adopt.html"> Adopt </a>
+        <a href="about.html"> About </a>
+        <a href="contact.html"> Contact </a>
+      </div>
+    </div>
+    <div class="contact_div">
+      <form class="contact_form" action="server_script" method="post">
+
+        <label for="firstname" style="margin-right:-5px;"> Firstname* </label>
+        <input type="text" name="firstname" id="firstname" value="" placeholder="Your name" required>
+        <br><br>
+
+        <label for="lastname"> Lastname* </label>
+        <input type="text" name="lastname" id="lastname" value="" placeholder="Your surname" required>
+        <br><br>
+
+        <label for="email"> Email* </label>
+        <input type="email" name="email" value="" placeholder="Your email" required>
+        <br><br>
+
+        <label for="category"> Category </label>
+        <select class="catselect" name="Pick a Category" id="category">
+          <option value="1"> Pandas & Info </option>
+          <option value="2"> Post-Adoption Questions </option>
+          <option value="3"> Excursions & Travel Fees </option>
+          <option value="4"> Payments & Refunds </option>
+          <option value="5"> Other </option>
+        </select>
+        <br><br>
+
+        <label for="comments" style="margin-right: -8px;"> Comments* </label>
+        <textarea name="Comments" id="comments" rows="10" placeholder="Your Message Here" cols="40">
+        </textarea>
+        <br><br><br>
+
+        <input type="submit" name="submit" id="submit" value="SUBMIT">
+
+      </form>
+
+    </div>
+
+  </div>
+  <hr class="brown">
+  <div class="mapholder">
+    <p>
+      Or find us in our <span style="color:#f8d0b0; font-weight: bold;">offices</span>.
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.4158483323195!2d23.72957041561558!3d37.967423508824574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd1136dfb8e1%3A0x669edc8aea21e104!2zV1dGIM6VzrvOu86sz4I!5e0!3m2!1sel!2sgr!4v1550540247546"
+      width="695" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <hr class="greenhr">
+  <div class="footer">
+    <div class="socimg">
+      <a target="_blank" href="https://www.facebook.com/ipandacom/"> <img class="social" src="images/fb.png" alt="Facebook" border="0">
+        <a target="_blank" href="https://twitter.com/WWF"> <img class="social" src="images/twit.png" alt="Twitter" border="0">
+          <a target="_blank" href="https://www.instagram.com/wwfgreece/"> <img class="social" src="images/insta.png" alt="Instagram" border="0">
+            <a target="_blank" href="https://www.youtube.com/user/WWF"> <img class="social" src="images/yt.png" alt="Youtube" border="0">
+    </div>
+  </div>
+
+
+  <div class="copyright">
+    <div class="cop">
+      <a target="_blank" href="https://jojopetropoulou.portfoliobox.net"> ©Jojo Petropoulou </a>
+    </div>
+  </div>
+</body>
+
+</html>
